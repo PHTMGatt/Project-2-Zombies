@@ -1,0 +1,10 @@
+:root {
+    color: white;
+}
+
+
+
+.AppBackground {
+  background: url('/assets/pictures/origins-zombie.jpg') no-repeat center center fixed;
+  background-size: cover;
+}

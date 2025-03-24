@@ -1,0 +1,282 @@
+:root{
+    color: white;
+    --background: #0068bd;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Whole Page */
+.page_container{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Header Items */
+.header_container {
+background-color: var(--background);
+display: flex;
+flex-wrap: wrap;
+margin: 7px;
+padding: 20px;
+align-items: center;
+justify-content: space-between;
+}
+
+.header_1 {
+color: black;
+font-size: 2rem;
+position: relative;
+margin: 3px;
+padding: 3px;
+display: flex;
+}
+
+.header_2 {
+    display: flex;
+    font-size: 2rem;
+    position: relative;
+    margin: 3px;
+    padding: 3px;
+}
+
+header {
+    text-shadow: none;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* Nav Items */
+nav {
+    text-shadow: none;
+}
+
+nav ul {
+display: flex;
+flex-wrap: wrap;
+}
+
+nav li {
+display: flex;
+flex-wrap: wrap;
+}
+
+.nav_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right: 16px;
+    margin-right: 16px;
+    
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+   
+}
+
+.item {
+    margin: 10px;
+}
+
+.main::before,
+.main::after {
+    content: url(../photos/Revive_Icon\ \(1\).png);
+}
+
+.ice::before,
+.ice::after {
+    content: url(../photos/Revive_Icon\ \(1\).png);
+}
+
+.fire::before,
+.fire::after {
+    content: url(../photos/Revive_Icon\ \(1\).png);
+}
+
+.wind::before,
+.wind::after {
+    content: url(../photos/Revive_Icon\ \(1\).png);
+}
+
+.lightning::before,
+.lightning::after {
+    content: url(../photos/Revive_Icon\ \(1\).png);
+}
+
+/* End of nav items */
+
+h3::before {
+    content: url(../photos/skull.png);
+}
+
+/* Main */
+
+main {
+display: flex;
+text-shadow: 2px 1px 1px black;
+justify-content: center;
+
+gap: 1rem;
+}
+
+main li {
+    align-items: center;
+    justify-content: center;
+}
+
+.main_container {
+max-width: 1800px;
+display: flex;
+margin: 0 auto;
+padding: 20px
+}
+
+.main_steps {
+display: flex;
+}
+
+.element_fists{
+display: flex;
+}
+
+article {
+padding: 20px
+}
+
+/* ToolTip */
+#Perks {
+    position: relative;
+    text-decoration: underline;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  /* Use a combination of pseudo-class and pseudo-element to create a tooltip */
+  #Perks:hover::after {
+    content: "Juggernog, Stamina Up, Speed Cola";
+    position: absolute;
+    left: 78px;
+    bottom: -50px;
+    min-width: 200px;
+    border: 1px #aaaaaa solid;
+    background-color: var(--background);
+    padding: 12px;
+    color: #fff;
+    font-size: 80%;
+    z-index: 1;
+  }
+
+/* Aside */
+.tips_container {
+    display: flex;
+    flex-wrap: wrap;
+    text-shadow: 2px 1px 1px black;
+    padding: 20px;
+    justify-content: flex-start;
+}
+
+.tips_container li {
+    margin: 1px 0;  /* Adjust margin between items */
+}
+
+article {
+border-bottom: 1% solid;
+}
+
+aside {
+width: 25%;
+}
+
+
+ /* Footer */
+
+footer{
+
+    /* Text Position */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 400;
+
+    /* Size & Color */
+    margin: 3px;
+    padding: 16px;
+    color: black;
+    background-color: var(--background);
+
+
+    /* Testing */
+position: relative;
+bottom: -100px;
+}
+
+/* Fire Code */
+.fire_img {
+    width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Ice Code */
+
+#Ice_Staff {
+    width: 55%;
+}
+
+/* Lightning Code */
+/* Wind Code */
+
+
+
+@media screen and (max-width: 600px){
+    .main_container{
+        flex-wrap: wrap;
+flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 601px){
+    .page_container{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .page_container{
+        width: 100%;
+    }
+}
+
+/* For smaller screens, stack the items and change to block layout */
+@media screen and (max-width: 768px) {
+    .tips_container {
+        display: block;  /* Stack the items vertically */
+    }
+
+    .tips_container li {
+        display: block;  /* Turn each item into a block-level element */
+        margin: 10px 0;  /* Space between each "tip" */
+    }
+}
+
+@media screen and (min-width: 992px){
+    .page_container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .main_container{
+        flex-wrap: wrap;
+flex-direction: column;
+    }
+aside{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+}
